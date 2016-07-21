@@ -14,6 +14,7 @@ while c<= 9006:
 			link = a.find("div",{"class":"counter clearfix"}).find("img")
 			link2 = "https://anizm.tv/"+link["src"]
 			save.creates(ad,ozet,link2)
+			save.mysqlbaglan(ad,ozet)
 			print ad + "a\n" + ozet + "\n" + tur
 			
 			if ad == "Anime Takvimi": continue
